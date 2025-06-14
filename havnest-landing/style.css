@@ -18,17 +18,16 @@
     border-bottom: 1px solid #eee;
   }
   
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #B88E2F;
-  }
-  
   .menu a {
     margin: 0 15px;
     text-decoration: none;
-    color: #000;
+    color: #b88e2f;
     font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    color: #a1751f;;
   }
   
   .icons span {
@@ -36,6 +35,16 @@
     cursor: pointer;
     font-size: 18px;
   }
+
+  .nav-icon {
+    width: 26px;
+    height: 26px;
+    margin-left: 20px;
+    cursor: pointer;
+    object-fit: contain;
+    }
+
+
   
   .hero {
     width: 100%;
@@ -83,7 +92,7 @@
   .description {
     font-size: 14px;
     margin-bottom: 20px;
-    color: #555;
+    color: #333;
   }
   
   .btn {
@@ -242,6 +251,15 @@
     background-color: #2ec1ac;
   }
   
+  .icon-img {
+    width: 6px;
+    height: 6px;
+    margin-right: 6px;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
   .overlay {
     position: absolute;
     inset: 0;
@@ -263,15 +281,33 @@
     background-color: white;
     color: #b88e2f;
     padding: 10px 20px;
+    border-radius: 4px;
     border: none;
     font-weight: 600;
     cursor: pointer;
     margin-bottom: 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .overlay button:hover {
+    background-color: #b88e2f;
+    color: white;
   }
   
+  .overlay .icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 12px;
+  }
+
   .overlay .icons span {
-    margin: 0 8px;
-    font-size: 12px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: white;
+    font-weight: 500;
+    gap: 6px;
   }
   
   .product-card h3 {
@@ -336,13 +372,6 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: #B88E2F;
-}
-
-.menu a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #000;
-  font-weight: 500;
 }
 
 .icons span {
@@ -604,10 +633,10 @@ body {
   min-width: 220px;
 }
 
-.footer-logo {
-  font-size: 24px;
-  font-weight: bold;
+.footer-logo-img {
+  height: 70px;
   margin-bottom: 16px;
+  display: block;
 }
 
 .footer-col h4 {
@@ -638,6 +667,13 @@ body {
   color: #b88e2f;
 }
 
+.footer-address {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
 .subscribe-form {
   display: flex;
   gap: 12px;
@@ -655,16 +691,22 @@ body {
 }
 
 .subscribe-form button {
-  background: none;
-  border: none;
-  border-bottom: 2px solid #111;
+  background-color: #b88e2f;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
   font-weight: bold;
-  cursor: pointer;
   font-size: 14px;
-  padding: 6px 0;
-  transition: border-color 0.3s;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .subscribe-form button:hover {
-  border-color: #b88e2f;
+  background-color: #a1751f;
+}
+
+.logo img {
+  display: block;
+  height: 70px;
 }
