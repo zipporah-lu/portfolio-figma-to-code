@@ -25,16 +25,6 @@
     font-weight: 500;
     transition: color 0.3s ease;
   }
-  
-  .menu a:hover {
-    color: #a1751f;;
-  }
-  
-  .icons span {
-    margin-left: 20px;
-    cursor: pointer;
-    font-size: 18px;
-  }
 
   .nav-icon {
     width: 26px;
@@ -153,10 +143,6 @@
     height: 100%;
     object-fit: cover;
     transition: filter 0.3s ease;
-  }
-  
-  .card-image:hover img {
-    filter: brightness(70%);
   }
   
   .card h3 {
@@ -709,4 +695,121 @@ body {
 .logo img {
   display: block;
   height: 70px;
+}
+
+/* Medium devices (tablets, iPads) */
+@media (max-width: 991px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 30px;
+  }
+
+  .menu {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 40px 30px;
+    justify-content: center;
+  }
+
+  .hero-content {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    padding: 40px 30px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .room-inspiration-section {
+    flex-direction: column;
+    padding: 60px 30px;
+    gap: 40px;
+  }
+
+  .left-text {
+    margin-left: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    padding: 40px 30px;
+    gap: 30px;
+  }
+
+  .footer-col {
+    min-width: unset;
+  }
+}
+
+/* Small devices (phones) */
+@media (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 20px;
+  }
+
+  .menu a {
+    margin: 5px 10px;
+    font-size: 14px;
+  }
+
+  .nav-icon {
+    width: 22px;
+    height: 22px;
+    margin-left: 14px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text {
+    padding: 30px 20px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .browse-range {
+    padding: 40px 20px;
+  }
+
+  .section-header h2 {
+    font-size: 22px;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .subscribe-form input[type="email"],
+  .subscribe-form button {
+    width: 100%;
+  }
 }
